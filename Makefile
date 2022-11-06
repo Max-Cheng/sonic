@@ -35,7 +35,8 @@ CC_amd64		:= clang
 ASM2ASM_amd64	:= tools/asm2asm/asm2asm.py
 
 CFLAGS			:= -mno-red-zone
-CFLAGS			+= -arch x86_64
+CFLAGS			+= -target x86_64
+CFLAGS			+= -masm=intel
 CFLAGS			+= -fno-asynchronous-unwind-tables
 CFLAGS			+= -fno-builtin
 CFLAGS			+= -fno-exceptions
